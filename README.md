@@ -10,7 +10,6 @@ That is why I built my own light template, whose simplicity makes it easy to use
 Basic Latex knowledge might help understanding and developing.
 
 The repo currently has a `resume.tex` which contains all the necessary commands to build your resume.
-
 The other files are my own resumes by language (English and Spanish).
 
 ## Features
@@ -19,13 +18,13 @@ The main sections are Contact Information, Education, Work Experience, Teaching 
 
 The commands are:
 
--   `\contactinformation`: builds the header with your name and desired position as title, and contact links as mail, linekdin profile, personal website and github.
--   `\concept`: begins a section building its title.
--   `\job`: builds the job title, location and date.
--   `\desc`: free space to explain the impact you had at that position. When possible, recommended to follow the pattern: Accomplished x as measured by y, by doing z.
--   `\data`: builds a one-line experience with its location or date.
--   `\courses`: adds a simple lighter line, intended for listing relevant courses taken below an education entry.
--   `\enumeration`: simple concept, aimed for a one line enumeration.
+- `\contactinformation`: builds the header with your name and desired position as title, and contact links as mail, linekdin profile, personal website and github.
+- `\concept`: begins a section building its title.
+- `\job`: builds the job title, location and date.
+- `\desc`: free space to explain the impact you had at that position. When possible, recommended to follow the pattern: Accomplished x as measured by y, by doing z.
+- `\data`: builds a one-line experience with its location or date.
+- `\courses`: adds a simple lighter line, intended for listing relevant courses taken below an education entry.
+- `\enumeration`: simple concept, aimed for a one line enumeration.
 
 ## Setup
 
@@ -35,12 +34,10 @@ You can either clone this repository and work with it in any text editor of your
 
 Here are the compiled versions of my resumes. I am currently looking at summer research internship opportunities in (Market) Algorithms and Combinatorial Optimization, and I am willing to relocate anywhere within the United States.
 
--   [English Version](./temp/math_en.pdf)
+- [English Version](./temp/english.pdf)
 
--   [Spanish Version](./temp/math_es.pdf)
+- [Spanish Version](./temp/spanish.pdf)
 
-If you are recruiting and you want to know more about me do not hesitate to reach out!
+For research or internship opportunities, feel free to email me at [cjp276@cornell.edu](mailto:cjp276@cornell.edu).
 
-Send me an email at `[first] dot [last] dot foster at gmail dot com`.
-
-Check my [linkedin profile](http://www.linkedin.com/in/cristianpalmaf) and my [personal website](https://elcrislwh.github.io/).
+Check my [linkedin profile](http://www.linkedin.com/in/cristianpalmaf) and my [personal website](https://cristianpalmafoster.github.io/).
