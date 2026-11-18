@@ -37,20 +37,20 @@
 }{}
 
 \newcommand{\job}[2]{
-	\normalsize \textbf{#1} \hfill \small \textcolor{gray}{\textit{#2}}\\
+	{\normalsize \textbf{#1} \hfill \small \textcolor{gray}{\textit{#2}}}\\
 }
-\newcommand{\data}[2]{
-	\small #1 \hfill \small \textcolor{gray}{\textit{#2}}\\
+\newcommand{\data}[2]{%
+    {\small #1 \hfill \textcolor{gray}{\textit{#2}}}\\%
 }
 \newcommand{\entry}[3]{
-	\small #1 \textcolor{gray}{#2} \hfill \small \textcolor{gray}{\textit{#3}}\\
+	{\small #1 \textcolor{gray}{#2} \hfill \small \textcolor{gray}{\textit{#3}}}\\
 }
 \newcommand{\desc}[1]{
-	\small #1 
+	{\small #1}
 	\vspace{0.1cm}\\
 }
 \newcommand{\courses}[1]{
-	\footnotesize \textcolor{gray}{#1}\\
+	{\footnotesize \textcolor{gray}{#1}}\\
 }
 \newcommand{\institution}[3]{%
     \data{\textbf{#1}\enspace #2}{#3}%
