@@ -1,7 +1,5 @@
 % Resume Template by Cristian Palma Foster
 \usepackage{graphicx} % manage images
-\usepackage{wrapfig} % place images
-\usepackage{multicol} % make columns
 \usepackage{xcolor}
 \usepackage{lmodern}
 \pagenumbering{gobble} % erase page numbers
@@ -12,22 +10,19 @@
 \setlength{\parskip}{-5pt}
 \setlength\parindent{0pt}
 
-% Well spaced lines in tables
-\renewcommand{\arraystretch}{1.3}
-
 % Contact Information
-\newcommand{\contactinformation}{%
-    {\centering\Large\bfseries Cristian J. Palma Foster\par}
-    \vspace{0.25cm}
-    \noindent
-    \href{mailto:cjp276@cornell.edu}{\textcolor{cvaccent}{cjp276@cornell.edu}}%
+\newcommand{\contactinformation}{
+	{\centering\Large\bfseries Cristian J. Palma Foster\par}
+	\vspace{0.25cm}
+	\noindent
+	\href{mailto:cjp276@cornell.edu}{\textcolor{cvaccent}{cjp276@cornell.edu}}%
 	\hfill
 	\href{https://cristianpalmafoster.github.io/}{\textcolor{cvaccent}{cristianpalmafoster.github.io}}%
 	\enspace
-    \href{https://scholar.google.com/citations?user=pxa9GkIAAAAJ}{\includegraphics[height=1em]{icons/google-scholar.png}}%
-    \enspace
-    \href{https://www.linkedin.com/in/cristianpalmaf/}{\includegraphics[height=1em]{icons/linkedin.png}}%
-    \par\vspace{0.35cm}
+	\href{https://scholar.google.com/citations?user=pxa9GkIAAAAJ}{\includegraphics[height=1em]{icons/google-scholar.png}}%
+	\enspace
+	\href{https://www.linkedin.com/in/cristianpalmaf/}{\includegraphics[height=1em]{icons/linkedin.png}}%
+	\par\vspace{0.35cm}
 }
 
 \newenvironment{concept}[1]{
@@ -39,11 +34,11 @@
 \newcommand{\job}[2]{
 	{\normalsize \textbf{#1} \hfill \small \textcolor{gray}{\textit{#2}}}\\
 }
-\newcommand{\data}[2]{%
-    {\small #1 \hfill \textcolor{gray}{\textit{#2}}}\\%
+\newcommand{\data}[2]{
+	{\small #1 \hfill \textcolor{gray}{\textit{#2}}}\\
 }
 \newcommand{\entry}[3]{
-	{\small #1 \textcolor{gray}{#2} \hfill \small \textcolor{gray}{\textit{#3}}}\\
+	{\small #1 \textcolor{gray}{#2} \hfill \textcolor{gray}{\textit{#3}}}\\
 }
 \newcommand{\desc}[1]{
 	{\small #1}
@@ -52,8 +47,8 @@
 \newcommand{\courses}[1]{
 	{\footnotesize \textcolor{gray}{#1}}\\
 }
-\newcommand{\institution}[3]{%
-    \data{\textbf{#1}\enspace #2}{#3}%
+\newcommand{\institution}[3]{
+	\data{\textbf{#1}\enspace #2}{#3}
 }
 \newcommand{\enumeration}[2]{
 	\textcolor{cvaccent}{\textbf{#1}}
