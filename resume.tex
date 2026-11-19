@@ -36,7 +36,7 @@
 }{\par\addvspace{\cvsectionsep}}
 
 \newcommand{\job}[2]{
-    {\normalsize\textbf{#1}\hfill {\small\textcolor{gray}{\textit{#2}}}\par}
+    \data{\textbf{#1}}{#2}
     \nopagebreak
 }
 \newcommand{\data}[2]{
@@ -52,7 +52,8 @@
 }
 \newcommand{\talktopic}[1]{
     \par\addvspace{\cventrysep}
-    \textbf{#1}\par\nopagebreak
+    {\small \textbf{#1}\par}
+	\nopagebreak
 }
 \newcommand{\institution}[3]{
 	\data{\textbf{#1}\enspace #2}{#3}
