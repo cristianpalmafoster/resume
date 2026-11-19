@@ -6,14 +6,18 @@
 
 \definecolor{cvaccent}{HTML}{165B60}
 
-% Well spaced paragraphs
-\setlength{\parskip}{-5pt}
-\setlength\parindent{0pt}
+% Well spaced sections and entries
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\newlength{\cvsectionsep}
+\setlength{\cvsectionsep}{7pt}
+\newlength{\cventrysep}
+\setlength{\cventrysep}{3pt}
 
 % Contact Information
 \newcommand{\contactinformation}{
 	{\centering\Large\bfseries Cristian J. Palma Foster\par}
-	\vspace{0.25cm}
+	\vspace{3pt}
 	\noindent
 	\href{mailto:cjp276@cornell.edu}{\textcolor{cvaccent}{cjp276@cornell.edu}}%
 	\hfill
@@ -22,35 +26,40 @@
 	\href{https://scholar.google.com/citations?user=pxa9GkIAAAAJ}{\includegraphics[height=1em]{icons/google-scholar.png}}%
 	\enspace
 	\href{https://www.linkedin.com/in/cristianpalmaf/}{\includegraphics[height=1em]{icons/linkedin.png}}%
-	\par\vspace{0.35cm}
+	\par\addvspace{\cvsectionsep}
 }
 
 \newenvironment{concept}[1]{
-	\begin{large}\textcolor{cvaccent}{\textbf{#1}}\end{large}\\
-	\vspace{-0.2cm}
-	
-}{}
+	\par\addvspace{\cvsectionsep}
+	{\large\bfseries\color{cvaccent}#1\par}
+	\nobreak\addvspace{\cventrysep}
+}{\par\addvspace{\cvsectionsep}}
 
 \newcommand{\job}[2]{
-	{\normalsize \textbf{#1} \hfill \small \textcolor{gray}{\textit{#2}}}\\
+    {\normalsize\textbf{#1}\hfill {\small\textcolor{gray}{\textit{#2}}}\par}
+    \nopagebreak
 }
 \newcommand{\data}[2]{
-	{\small #1 \hfill \textcolor{gray}{\textit{#2}}}\\
+    {\small #1\hfill \textcolor{gray}{\textit{#2}}\par}
 }
 \newcommand{\entry}[3]{
-	{\small #1 \textcolor{gray}{#2} \hfill \textcolor{gray}{\textit{#3}}}\\
+    \data{#1 \textcolor{gray}{#2}}{#3}
 }
 \newcommand{\desc}[1]{
-	{\small #1}
-	\vspace{0.1cm}\\
+    {\small #1\par}
+    \addvspace{\cventrysep}
 }
 \newcommand{\courses}[1]{
-	{\footnotesize \textcolor{gray}{#1}}\\
+    {\footnotesize\textcolor{gray}{#1}\par}
+    \addvspace{1.5pt}
+}
+\newcommand{\talktopic}[1]{
+    \par\addvspace{\cventrysep}
+    \textbf{#1}\par\nopagebreak
 }
 \newcommand{\institution}[3]{
 	\data{\textbf{#1}\enspace #2}{#3}
 }
 \newcommand{\enumeration}[2]{
-	\textcolor{cvaccent}{\textbf{#1}}
-	{\small #2}
+    \textcolor{cvaccent}{\textbf{#1}} {\small #2}\par
 }
