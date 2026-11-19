@@ -36,28 +36,29 @@
 }{\par\addvspace{\cvsectionsep}}
 
 \newcommand{\job}[2]{
-    \data{\textbf{#1}}{#2}
-    \nopagebreak
+	\par\addvspace{\cventrysep}
+	\data{\textbf{#1}}{#2}
+	\nopagebreak
 }
 \newcommand{\data}[2]{
-    {\small #1\hfill \textcolor{gray}{\textit{#2}}\par}
+	{\small #1\hfill \textcolor{gray}{\textit{#2}}\par}
 }
 \newcommand{\desc}[1]{
-    {\small #1\par}
-    \addvspace{\cventrysep}
+	{\small #1\par}
 }
 \newcommand{\annotation}[1]{
-    {\footnotesize\textcolor{gray}{#1}\par}
-    \addvspace{1.5pt}
+	{\footnotesize\textcolor{gray}{#1}\par}
+	\addvspace{1.5pt}
 }
 \newcommand{\talktopic}[1]{
-    \par\addvspace{\cventrysep}
-    {\small \textbf{#1}\par}
+	\par\addvspace{\cventrysep}
+	{\small \textbf{#1}\par}
 	\nopagebreak
 }
 \newcommand{\institution}[3]{
 	\data{\textbf{#1}\enspace #2}{#3}
 }
 \newcommand{\enumeration}[2]{
-    \textcolor{cvaccent}{\textbf{#1}} {\small #2}\par
+	\par\addvspace{2pt}
+	\textcolor{cvaccent}{\textbf{#1}} {\small #2}\par
 }
