@@ -1,46 +1,44 @@
-This README will present the repository, its features and how to use it.
+This repo is for recruiters interested in my experience and for anyone looking for a resume example or template. You can find my resume in English and Spanish under [My Resumes](#my-resumes).
 
-This repo is intended for recruiters interested on my experiences and people who want to see resume examples or templates.
-
-# Latex Resume Template
+# LaTeX Resume Template
 
 Modern templates tend to be extremely rigid, making it impossible in most cases to make slight modifications to get a document exactly as you like.
 That is why I built my own light template, whose simplicity makes it easy to use and tune.
 
-Basic Latex knowledge might help understanding and developing.
+Some basic LaTeX knowledge helps if you want to modify the template.
 
-The repo currently has a `resume.tex` which contains all the necessary commands to build your resume.
-
-The other files are my own resumes by language (English and Spanish).
+The file `resume.tex` contains the commands to build your resume.
+My own versions are in `english.tex` and `spanish.tex`.
 
 ## Features
 
-The main sections are Contact Information, Education, Work Experience, Teaching Assistantships, Projects, Honors, Computer Skills, Languages, Free Time. Any of these can be skipped if not relevant or if you do not have that kind of experience.
+The main sections are Education, Research Papers, Selected Talks, Work Experience, Honors, Teaching Assistantships, and Projects.
+Any of these can be skipped if not relevant or if you do not have that kind of experience.
 
-The commands are:
-
--   `\contactinformation`: builds the header with your name and desired position as title, and contact links as mail, linekdin profile, personal website and github.
--   `\concept`: begins a section building its title.
--   `\job`: builds the job title, location and date.
--   `\desc`: free space to explain the impact you had at that position. When possible, recommended to follow the pattern: Accomplished x as measured by y, by doing z.
--   `\data`: builds a one-line experience with its location or date.
--   `\map`: begins a two columns table, intended to be used a map listing properties related to a concept.
--   `\entry`: builds the concept and its related properties.
+- `\contactinformation` builds the header with your name, email, personal website, Google Scholar, and LinkedIn. Edit this command in `resume.tex` to use your own details.
+- `\begin{concept}{Title} ... \end{concept}` groups entries under a section title.
+- `\institution` lists a university, a degree or courses taught, and the dates.
+- `\annotation` adds a lighter line below an entry, such as a research visit or relevant courses.
+- `\job` pairs a paper title with its venue or status, or a job title with its location and dates.
+- `\desc` adds the authors below a paper or describes the impact you had in a job. For work experience, I try to follow the pattern “Accomplished X as measured by Y, by doing Z.”
+- `\talktopic` groups talks and posters on the same research topic.
+- `\data` puts an entry on one line with its location or date on the right.
+- `\enumeration` puts a label and its contents on one line, as in Research Interests or Languages.
 
 ## Setup
 
-You can either clone this repository and work with it in any text editor of your choice, provided that you have a TeX compiler, or download and use directly on any latex editor as [overleaf](https://www.overleaf.com/).
+You can either clone this repository and work with it in any text editor of your choice, provided that you have a TeX compiler, or download it and use it in an online LaTeX editor such as [Overleaf](https://www.overleaf.com/).
 
 # My Resumes
 
-Here are the compiled versions of my resumes. I am currently looking at summer research internship opportunities in (Market) Algorithms and Combinatorial Optimization, and I am willing to relocate anywhere within the United States.
+Here are the compiled versions of my resumes.
+I am currently looking for a summer research internship in algorithmic game theory or combinatorial optimization, with a particular interest in learning in games and mechanism design.
+I am open to relocate anywhere within the United States.
 
--   [English Version](./temp/math_en.pdf)
+- [English Version](./temp/english.pdf)
 
--   [Spanish Version](./temp/math_es.pdf)
+- [Spanish Version](./temp/spanish.pdf)
 
-If you are recruiting and you want to know more about me do not hesitate to reach out!
+For research or internship opportunities, feel free to email me at [cjp276@cornell.edu](mailto:cjp276@cornell.edu).
 
-Send me an email at `[first] dot [last] dot foster at gmail dot com`.
-
-Check my [linkedin profile](http://www.linkedin.com/in/cristianpalmaf) and my [personal website](https://elcrislwh.github.io/).
+Check my [LinkedIn profile](https://www.linkedin.com/in/cristianpalmaf/) and my [personal website](https://cristianpalmafoster.github.io/).

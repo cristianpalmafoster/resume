@@ -1,60 +1,64 @@
 % Resume Template by Cristian Palma Foster
 \usepackage{graphicx} % manage images
-\usepackage{wrapfig} % place images
-\usepackage{multicol} % make columns
 \usepackage{xcolor}
+\usepackage{lmodern}
 \pagenumbering{gobble} % erase page numbers
 
-% Well spaced paragraphs
-\setlength{\parskip}{-5pt}
-\setlength\parindent{0pt}
+\definecolor{cvaccent}{HTML}{165B60}
 
-% Well spaced lines in tables
-\renewcommand{\arraystretch}{1.3}
+% Well spaced sections and entries
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\newlength{\cvsectionsep}
+\setlength{\cvsectionsep}{7pt}
+\newlength{\cventrysep}
+\setlength{\cventrysep}{3pt}
 
 % Contact Information
-\newcommand{\contactinformation}[1]{
-	\begin{center}
-		{\huge \textbf{Cristian Palma - #1}}
-
-		\vspace{0.5cm}
-		\href{mailto:cristian.palma.foster@gmail.com}{cristian.palma.foster@gmail.com},
-		\href{http://www.linkedin.com/in/cristianpalmaf}{linkedin.com/in/cristianpalmaf},
-		\href{https://elcrislwh.github.io/}{elcrislwh.github.io}
-		% \href{http://www.github.com/elcrislwh}{github.com/elcrislwh}
-		\vspace{0.2cm}
-	\end{center}
+\newcommand{\contactinformation}{
+	{\centering\Large\bfseries Cristian J. Palma Foster\par}
+	\vspace{3pt}
+	\noindent
+	\href{mailto:cjp276@cornell.edu}{\textcolor{cvaccent}{cjp276@cornell.edu}}%
+	\hfill
+	\href{https://cristianpalmafoster.github.io/}{\textcolor{cvaccent}{cristianpalmafoster.github.io}}%
+	\enspace
+	\href{https://scholar.google.com/citations?user=pxa9GkIAAAAJ}{\includegraphics[height=1em]{icons/google-scholar.png}}%
+	\enspace
+	\href{https://www.linkedin.com/in/cristianpalmaf/}{\includegraphics[height=1em]{icons/linkedin.png}}%
+	\par\addvspace{\cvsectionsep}
 }
 
 \newenvironment{concept}[1]{
-	\begin{large} \textcolor{gray}{\textbf{#1:}}\end{large}\\
-	\vspace{-0.2cm}
-	
-}{}
+	\par\addvspace{\cvsectionsep}
+	{\large\bfseries\color{cvaccent}#1\par}
+	\nobreak\addvspace{\cventrysep}
+}{\par\addvspace{\cvsectionsep}}
 
 \newcommand{\job}[2]{
-	\normalsize \textbf{#1} \hfill \small \textcolor{gray}{\textit{#2}}\\
+	\par\addvspace{\cventrysep}
+	\data{\textbf{#1}}{#2}
+	\nopagebreak
 }
 \newcommand{\data}[2]{
-	\small #1 \hfill \small \textcolor{gray}{\textit{#2}}\\
+	{\small #1\hfill \textcolor{gray}{\textit{#2}}\par}
 }
 \newcommand{\desc}[1]{
-	\small #1 
-	\vspace{0.1cm}\\
+	{\small #1\par}
 }
-\newcommand{\courses}[1]{
-	\footnotesize \textcolor{gray}{#1} \\
+\newcommand{\annotation}[1]{
+	{\footnotesize\textcolor{gray}{#1}\par}
+	\addvspace{1.5pt}
 }
-
-\newenvironment{map}[1]{
-	\concept{#1}
-	
-	\hspace{-0.3cm}
-	\begin{tabular}{lr}
-}{ 
-	\end{tabular}\\
+\newcommand{\talktopic}[1]{
+	\par\addvspace{\cventrysep}
+	{\small \textbf{#1}\par}
+	\nopagebreak
 }
-
-\newcommand{\entry}[2]{
-	\small #1 & \small #2\\
+\newcommand{\institution}[3]{
+	\data{\textbf{#1}\enspace #2}{#3}
+}
+\newcommand{\enumeration}[2]{
+	\par\addvspace{2pt}
+	\textcolor{cvaccent}{\textbf{#1}} {\small #2}\par
 }
